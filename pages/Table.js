@@ -40,7 +40,7 @@ import styles from "../styles/Table.module.css"
             return(
               <tr key={i}>
 
-            <td className={styles.td}>{e.category.attributes["im:id"]}</td>
+            <td className={styles.td}>{visited+i+1}</td>
             <td className={styles.th}><img className={styles.img} src={e["im:image"][2].label}/></td>
             <td className={styles.td}>{e.category.attributes.label}</td>
               <td className={styles.td}>{e["im:artist"].label}</td>
