@@ -1,0 +1,31 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "name": "Bertie Yates",
+            "age": 29,
+            "image":
+              "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
+              "bio":"Collaborate and share knowledge with a private group",
+              "ed":"Bcom graduate"
+          },
+          {
+            "id": 2,
+            "name": "Hester Hogan",
+            "age": 32,
+            "image":
+              "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg",
+              "bio":"Collaborate and share knowledge with a private group",
+              "ed":"Bsc graduate"
+          },
+          {
+            "id": 3,
+            "name": "Larry Little",
+            "age": 36,
+            "image":
+              "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+              "bio":"Collaborate and share knowledge with a private group",
+              "ed":"Btech graduate"
+          }
+    ]
+}
