@@ -22,3 +22,37 @@ font-style: italic;
 .heading{
     text-align: center;
 }
+
+.paginationBttns {
+    /* width: 80%;
+    height: 40px; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    color: blue;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .paginationBttns a:hover {
+    color: white;
+    background-color: blue;
+  }
+  
+  .paginationActive a {
+    color: white;
+    background-color: blue;
+  }
+  
+  .paginationDisabled a {
+    color: grey;
+    background-color: grey;
+  }

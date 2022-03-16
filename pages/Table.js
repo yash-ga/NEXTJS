@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react"
 // import styles from  "../styles/Home.module.css"
 import styles from "../styles/Table.module.css"
+ import ReactPaginate from "react-paginate";
 
   export function Table(){
    const [arr,setArr]=useState([])
+   const [page,setPage]=useState(0)
+   const albumPerPage=5
+   const visited=page*albumPerPage
+   function changePage({selected}){
+    setPage(selected)
+   }
    async function some(){
      const res=await fetch("https://itunes.apple.com/in/rss/topalbums/limit=25/json");
      const data=await res.json()
@@ -29,7 +36,7 @@ import styles from "../styles/Table.module.css"
 
         </tr>
 
-          {arr.map((e,i)=>{
+          {arr.slice(visited,visited+albumPerPage).map((e,i)=>{
             return(
               <tr key={i}>
 
@@ -43,6 +50,17 @@ import styles from "../styles/Table.module.css"
             )
           })}
     </table>
+    <ReactPaginate
+							previousLabel={"Previous"}
+							nextLabel={"Next"}
+							pageCount={5}//data.length
+							onPageChange={changePage}
+							containerClassName={styles.paginationBttns}
+							previousLinkClassName={styles.previousBttn}
+							nextLinkClassName={styles.nextBttn}
+							activeClassName={styles.paginationActive}
+						/>
+
 
   
         </div>
