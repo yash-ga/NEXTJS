@@ -9,7 +9,7 @@ import styles from "../styles/Table.module.css"
    const albumPerPage=5
    const visited=page*albumPerPage
    function changePage({selected}){
-    setPage(selected)
+    setPage(selected)//selected is a in built keyword do not change
    }
    async function some(){
      const res=await fetch("https://itunes.apple.com/in/rss/topalbums/limit=25/json");
